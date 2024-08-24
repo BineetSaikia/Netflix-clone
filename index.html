@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #141414;
+}
+
+header {
+    background-color: #000;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+}
+.search img { 
+    width: 40px;
+    height: 40px;
+  
+}
+.bar{
+    background-color: white;
+    width:550px;
+    height:40px
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    align-items: right;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.hero {
+    background: url('delhi-crime.jpg') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.content {
+    padding: 60px 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+            </div>
+            <div class="search">
+                <img src="search.png">
+            </div>
+          
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <div class="profile">
+                <img src="profile.png" alt="Profile Icon">
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Watch Your Favorite Shows</h1>
+            <p>Stream thousands of movies and TV shows, including award-winning Netflix originals.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    <section class="content">
+        <h2>Popular on Netflix</h2>
+        <div class="card-container">
+            <div class="card"><img src="maharaja-et00399737-1719557119.avif" alt="Content 1"></div>
+            <div class="card"><img src="money heist.jpg" alt="Content 2"></div>
+            <div class="card"><img src="stranger things.jpeg" alt="Content 3"></div>
+            <div class="card"><img src="friends.jpg" alt="Content 4"></div>
+            <div class="card"><img src="mismatched.jpg" alt="Content 5"></div>
+            <div class="card"><img src="kho gaye hum kaha.jpg" alt="Content 6"></div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
